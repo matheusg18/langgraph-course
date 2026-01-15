@@ -1,9 +1,9 @@
 import sqlite3
 from langgraph.graph import StateGraph, START, END
-
-from agents.long_running.nodes import call_model, summarization_node
-from agents.long_running.state import State
 from langgraph.checkpoint.sqlite import SqliteSaver
+
+from app.agents.long_running.nodes import call_model, summarization_node
+from app.agents.long_running.state import State
 
 
 builder = StateGraph(State)

@@ -3,8 +3,8 @@ from langmem.short_term import SummarizationNode
 from langchain_core.tools import tool
 from langchain_core.messages import SystemMessage
 
-from agents.long_running.state import LLMInputState, State
-from src.agents.long_running.config import summarization_model, model
+from app.agents.long_running.state import LLMInputState, State
+from app.agents.long_running.config import summarization_model, model
 
 summarization_node = SummarizationNode(
     token_counter=count_tokens_approximately,
